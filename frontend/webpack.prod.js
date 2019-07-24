@@ -73,12 +73,12 @@ module.exports = {
     ]
   },
   entry: {
-    getStarted: entryPointsPathPrefix + '/getStarted.jsx',
-    documentation: entryPointsPathPrefix + '/documentation.jsx',
-    dashboard: entryPointsPathPrefix + '/dashboard.jsx',
-    marketplace: entryPointsPathPrefix + '/marketplace.jsx',
-    authorise: entryPointsPathPrefix + '/authorise.jsx',
-    appsettings: entryPointsPathPrefix + '/appsettings.jsx',
+    HomePage: entryPointsPathPrefix + '/HomePage.jsx',
+    DocumentationPage: entryPointsPathPrefix + '/DocumentationPage.jsx',
+    DashboardPage: entryPointsPathPrefix + '/DashboardPage.jsx',
+    MarketplacePage: entryPointsPathPrefix + '/MarketplacePage.jsx',
+    AuthorisePage: entryPointsPathPrefix + '/AuthoriseAppPage.jsx',
+    AppSettingsPage: entryPointsPathPrefix + '/AppSettingsPage.jsx',
     vendors: ['react'],
   },
   output: {
