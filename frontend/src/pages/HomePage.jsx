@@ -36,8 +36,10 @@ class HomePage extends React.Component {
                              isVerticalAlign={false}
                              isHorizontalAlign={false}
                              isFullScreen={false} />
-                <CustomButton link="" text="docs" />
-                <CustomButton link="" text="slack" />
+                <div className="social-links">
+                  <CustomButton link="" text="docs" isMarginRight={true}/>
+                  <CustomButton link="" text="slack" isMarginRight={false}/>
+                </div>
               </div>
             }
             right={

@@ -7,8 +7,12 @@ export default class CustomButton extends React.Component {
   }
 
   render() {
+  	var class_name = "button button-primary";
+
+  	if(this.props.isMarginRight) { class_name += " inline-button"}
+
     return (
-		<a class="button button-primary" href={this.props.link}>{this.props.text}</a>
+		<a class={class_name} href={this.props.link}>{this.props.text}</a>
     );
   }
 

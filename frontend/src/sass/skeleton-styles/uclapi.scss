@@ -9,6 +9,7 @@
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 - Setup
 - Alignments
+- Buttons
 */
 
 /* Setup */
@@ -22,7 +23,7 @@
     min-height: 100%;
 }
 
-/*Alignments*/
+/* Alignments */
 .center-x {
 	margin: auto;
 	position: relative;
@@ -36,4 +37,9 @@
 
 .full-screen {
 	height: 100%;
+}
+
+/* Buttons */
+.inline-button {
+	margin-right: 20px;
 }
