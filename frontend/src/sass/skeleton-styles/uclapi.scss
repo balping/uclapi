@@ -1,0 +1,39 @@
+/*
+* UCL API Custom Styles
+* www.uclapi.com
+* 24/07/19
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Setup
+- Alignments
+*/
+
+/* Setup */
+ html, body {
+    height: 100%;
+    margin: 0;
+}
+.app,
+.index {
+    display: inline;
+    min-height: 100%;
+}
+
+/*Alignments*/
+.center-x {
+	margin: auto;
+	position: relative;
+}
+
+.center-y {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
+
+.full-screen {
+	height: 100%;
+}

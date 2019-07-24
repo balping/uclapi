@@ -1,11 +1,11 @@
 // Imports
 import React from 'react';
-import logo from './../../images/simpleAPILogoWhite.svg';
+import logo from '../../../images/simpleAPILogoBlack.svg';
 import posed from 'react-pose';
 // Components
-import Link from './link.jsx';
+import Link from './Link.jsx';
 // Images
-import menu from '../../images/menu.svg';
+import menu from '../../../images/menu.svg';
 
 const Toast = posed.div({
 	hidden: { top: '-80px' },
@@ -36,7 +36,7 @@ let links = [
 const maxScreen = 770;
 
 
-class NavbarConsistent extends React.Component {
+class NavBar extends React.Component {
 	constructor(props) {
 		super(props);
 
@@ -124,4 +124,4 @@ class NavbarConsistent extends React.Component {
 	}
 }
 
-export default NavbarConsistent;
+export default NavBar;

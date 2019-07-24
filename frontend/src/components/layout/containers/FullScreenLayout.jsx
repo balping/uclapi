@@ -2,12 +2,8 @@ import React from 'react';
 
 export default class FullScreenLayout extends React.Component {
 
-  constructor() props) {
+  constructor(props) {
     super(props);
-
-    this.state = {
-      isShow: true,
-    };
   }
 
   render() {
