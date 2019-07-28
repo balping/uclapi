@@ -165,7 +165,7 @@ def dashboard(request):
 
 
 @ensure_csrf_cookie
-def get_started(request):
+def home(request):
     logged_in = True
 
     try:
@@ -176,7 +176,7 @@ def get_started(request):
     articles = get_articles()
     token = get_temp_token()
 
-    return render(request, 'getStarted.html', {
+    return render(request, 'HomePage.html', {
         'initial_data': {
             'temp_token': token,
             'logged_in': str(logged_in),
