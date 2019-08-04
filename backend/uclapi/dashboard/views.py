@@ -187,4 +187,4 @@ def home(request):
 
 @ensure_csrf_cookie
 def documentation(request):
-    return render(request, 'documentation.html')
+    return render(request, 'Documentation.html')
