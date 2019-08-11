@@ -27,15 +27,14 @@ $navbarHeight: 60px;
   width: 100%;
   top: 0;
   
-  background-position: 50% 0%;
-  background-size: cover;
+  background-color: #313537;
 
   display: flex;
   align-items: center;
 
   transition-property: top;
   transition-duration: 0.2s;
-  transition-timing-function: linear;
+  transition-timing-function: ease-out;
 
   @include boxShadow(1);
 

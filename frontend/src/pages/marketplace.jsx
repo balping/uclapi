@@ -6,6 +6,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // Styles
 import 'Styles/common/uclapi.scss';
 
+// Legacy
+import 'Styles/navbar.scss';
+
 // Images
 // Room Buddy
 import roombuddylogo from 'Images/marketplace/roombuddy/logo.png';
@@ -23,7 +26,7 @@ import market from 'Images/marketplace/market.svg';
 import logo from 'Images/home-page/logo.svg';
 
 // Common Components
-import { Row, Column, TextView, ButtonView, CardView, ImageView } from 'Layout/Items.jsx';
+import { Row, Column, TextView, ButtonView, CardView, ImageView, NavBar } from 'Layout/Items.jsx';
 
 // Application config
 let roombuddydescription = (
@@ -110,7 +113,10 @@ class Marketplace extends React.Component {
       var logosize = "150px";
 
       return (
-        <div className="marketplace-container">
+        <React.Fragment>
+
+          <NavBar isScroll={"true"} />
+
           <Row src={market} height="600px" color="ucl-orange" img_size="auto 60%">         
             <Column style="1-1" isCentered={true} isCenteredText={true} isVerticalAlign={true}>
               <TextView text={"UCL Marketplace"} heading={1} align={"center"}/>
@@ -170,7 +176,7 @@ class Marketplace extends React.Component {
                 <ImageView src={logo} width={logosize} height={logosize} description={"ucl api logo"} isCentered={true} />
             </Column>
           </Row>
-        </div>
+        </React.Fragment>
       );
     }
 }
@@ -194,7 +200,10 @@ class AppPage extends React.Component {
     var screenshotheight = "384px";
 
     return (
-      <div className="marketplace-container">
+      <React.Fragment>
+
+          <NavBar isScroll={"true"} />
+
           <Row src={market} height="600px" color="ucl-orange" img_size="auto 60%">         
             <Column style="1-1" isCentered={true} isCenteredText={true} isVerticalAlign={true}>
               <TextView text={"UCL Marketplace"} heading={1} align={"center"}/>
@@ -245,7 +254,7 @@ class AppPage extends React.Component {
                 <ImageView src={logo} width={logosize} height={logosize} description={"ucl api logo"} isCentered={true} />
             </Column>
           </Row>
-      </div>
+      </React.Fragment>
     );
   }
 
