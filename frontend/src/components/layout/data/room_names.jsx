@@ -1,4 +1,4 @@
-const rooms = [
+let rooms = [
   'Wilkins Building (Main Building) Portico',
   'Torrington (1-19) 433',
   'Darwin Building B05',
